@@ -6,7 +6,7 @@ class Car:
         self.fuel_level = fuel_level
 
     def accelerate(self, speed_up):
-        if self.fuel_level >= 0:
+        if self.fuel_level > 0:
             if self.current_speed + speed_up <= self.max_speed:
                 self.current_speed += speed_up
             else:
